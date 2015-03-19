@@ -2,6 +2,7 @@
 {
     using System;
     using System.Security.Cryptography;
+
     public static class RandomNumberGenerator
     {
         private static readonly RNGCryptoServiceProvider generator = new RNGCryptoServiceProvider();
