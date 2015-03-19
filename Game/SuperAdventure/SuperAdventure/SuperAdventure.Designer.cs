@@ -141,6 +141,10 @@
             // cboPtions
             // 
             this.cboPtions.FormattingEnabled = true;
+            this.cboPtions.Items.AddRange(new object[] {
+            "Bira",
+            "Rakiq",
+            "Benzin"});
             this.cboPtions.Location = new System.Drawing.Point(369, 593);
             this.cboPtions.Name = "cboPtions";
             this.cboPtions.Size = new System.Drawing.Size(121, 21);
