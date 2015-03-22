@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Engine
+﻿namespace Engine
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
     public class Player : LivingCreature
     {
         public Player(int currentHitPoints, int maximumHitPoints, int gold, int experiencePoints, int level)

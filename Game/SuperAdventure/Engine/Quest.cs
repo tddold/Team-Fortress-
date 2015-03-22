@@ -6,7 +6,6 @@
     using System.Text;
     using System.Threading.Tasks;
 
-
     public class Quest
     {
         public Quest(int id, string name, string description, int rewardExpiriancePoint, int rewardGold)

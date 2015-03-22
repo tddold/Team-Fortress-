@@ -12,7 +12,6 @@
 
     using Engine;
 
-
     public partial class SuperAdventure : Form
     {
         private Player _player;
