@@ -21,7 +21,7 @@
             double healingPoint;
             switch ((int)potion)
             {
-                case 0: 
+                case 0:
                     healingPoint = Math.Floor(maxHealth * 0.3);
                     currentHealth += (int)healingPoint;
                     if (currentHealth > maxHealth)

@@ -8,7 +8,8 @@
 
     public class Monster : LivingCreature
     {
-        public Monster(int id, string name, int maximumDamage, int rewardExpiriancePoints, int rewardGold, int currentHitPoints, int maximumHitPoints) : base (currentHitPoints, maximumHitPoints)
+        public Monster(int id, string name, int maximumDamage, int rewardExpiriancePoints, int rewardGold, int currentHitPoints, int maximumHitPoints)
+            : base(currentHitPoints, maximumHitPoints)
         {
             this.ID = id;
             this.Name = name;
@@ -20,8 +21,8 @@
 
         public int ID { get; set; }
 
-        public string Name { get; set; }     
-          
+        public string Name { get; set; }
+
         public int MaximumDamage { get; set; }
 
         public int RewardExpiriencePoints { get; set; }

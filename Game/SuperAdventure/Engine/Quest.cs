@@ -5,7 +5,8 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-    
+
+
     public class Quest
     {
         public Quest(int id, string name, string description, int rewardExpiriancePoint, int rewardGold)
@@ -29,5 +30,8 @@
         public int RewardGold { get; set; }
 
         public List<QuestCompletionItem> QuestComletionItems { get; set; }
+
+        public Item RewardItem { get; set; }
+
     }
 }
