@@ -14,7 +14,7 @@
             this.ID = id;
             this.Name = name;
             this.MaximumDamage = maximumDamage;
-            this.RewardExpiriencePoints = rewardExpiriancePoints;
+            this.RewardExperiencePoints = rewardExpiriancePoints;
             this.RewardGold = rewardGold;
             this.LootTable = new List<LootItem>();
         }
@@ -25,7 +25,7 @@
 
         public int MaximumDamage { get; set; }
 
-        public int RewardExpiriencePoints { get; set; }
+        public int RewardExperiencePoints { get; set; }
 
         public int RewardGold { get; set; }
 
