@@ -2,8 +2,8 @@
 {
     public enum PotionType
     {
-        Bira,
-        Rakia,
-        Benzin
+        Bira = 5,
+        Rakia = 10,
+        Benzin = 15
     }
 }
