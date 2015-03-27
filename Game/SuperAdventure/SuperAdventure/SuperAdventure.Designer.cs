@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.lblExperience = new System.Windows.Forms.Label();
+            this.Label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblHitPoints = new System.Windows.Forms.Label();
             this.lblGold = new System.Windows.Forms.Label();
-            this.lblExpiriance = new System.Windows.Forms.Label();
+            this.lblExperience = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblLevel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -62,14 +62,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Hit Points:";
             // 
-            // lblExperience
+            // Label2
             // 
-            this.lblExperience.AutoSize = true;
-            this.lblExperience.Location = new System.Drawing.Point(18, 74);
-            this.lblExperience.Name = "lblExperience";
-            this.lblExperience.Size = new System.Drawing.Size(63, 13);
-            this.lblExperience.TabIndex = 1;
-            this.lblExperience.Text = "Experience:";
+            this.Label2.AutoSize = true;
+            this.Label2.Location = new System.Drawing.Point(18, 74);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(63, 13);
+            this.Label2.TabIndex = 1;
+            this.Label2.Text = "Experience:";
             // 
             // label3
             // 
@@ -96,13 +96,13 @@
             this.lblGold.Size = new System.Drawing.Size(0, 13);
             this.lblGold.TabIndex = 4;
             // 
-            // lblExpiriance
+            // lblExperience
             // 
-            this.lblExpiriance.AutoSize = true;
-            this.lblExpiriance.Location = new System.Drawing.Point(110, 74);
-            this.lblExpiriance.Name = "lblExpiriance";
-            this.lblExpiriance.Size = new System.Drawing.Size(0, 13);
-            this.lblExpiriance.TabIndex = 5;
+            this.lblExperience.AutoSize = true;
+            this.lblExperience.Location = new System.Drawing.Point(110, 74);
+            this.lblExperience.Name = "lblExperience";
+            this.lblExperience.Size = new System.Drawing.Size(0, 13);
+            this.lblExperience.TabIndex = 5;
             // 
             // label4
             // 
@@ -280,11 +280,11 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblLevel);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblExpiriance);
+            this.Controls.Add(this.lblExperience);
             this.Controls.Add(this.lblGold);
             this.Controls.Add(this.lblHitPoints);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.lblExperience);
+            this.Controls.Add(this.Label2);
             this.Controls.Add(this.label1);
             this.Location = new System.Drawing.Point(110, 31);
             this.Name = "SuperAdventure";
@@ -299,11 +299,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblExperience;
+        private System.Windows.Forms.Label Label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblHitPoints;
         private System.Windows.Forms.Label lblGold;
-        private System.Windows.Forms.Label lblExpiriance;
+        private System.Windows.Forms.Label lblExperience;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblLevel;
         private System.Windows.Forms.Label label5;
