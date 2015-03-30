@@ -2,7 +2,7 @@
 {
     using Engine.Interfaces;
 
-    public class LivingCreature : ILiving
+    public class LivingCreature //: ILiving
     {
         public int CurrentHitPoints { get; set; }
 
