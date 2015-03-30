@@ -22,6 +22,7 @@
 
         public Location LocationToWest { get; set; }
 
+        //Constructor
         public Location(int id, string name, string description,
             Item itemRequiredToEnter = null, Quest questAvailableHere = null, Monster monsterLivingHere = null)
         {

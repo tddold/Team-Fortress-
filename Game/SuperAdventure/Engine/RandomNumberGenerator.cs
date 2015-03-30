@@ -7,6 +7,7 @@
     {
         private static readonly RNGCryptoServiceProvider generator = new RNGCryptoServiceProvider();
 
+        //Number generator
         public static int NumberGenerate(int minValue, int maxValue)
         {
             byte[] data = new byte[4];
