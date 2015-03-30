@@ -12,6 +12,7 @@
 
         public PotionType Size { get; set; }
 
+        //Calculating health after usage
         public void PotionUse(int currentHealth, int maxHealth, PotionType potion)
         {
             double healingPoint;

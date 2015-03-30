@@ -16,6 +16,8 @@
 
         public List<LootItem> LootTable { get; set; }
 
+
+        //Constructor
         public Monster(int id, string name, int maximumDamage, int rewardExpiriancePoints, int rewardGold, int currentHitPoints, int maximumHitPoints)
             : base(currentHitPoints, maximumHitPoints)
         {

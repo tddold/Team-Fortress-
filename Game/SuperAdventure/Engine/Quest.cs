@@ -18,6 +18,7 @@
 
         public Item RewardItem { get; set; }
 
+        //Constructor
         public Quest(int id, string name, string description, int rewardExpiriancePoint, int rewardGold)
         {
             this.ID = id;

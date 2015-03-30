@@ -8,11 +8,13 @@ namespace Engine
 {
     public static class World
     {
+        //Lists 
         public static readonly List<Item> Items = new List<Item>();
         public static readonly List<Monster> Monsters = new List<Monster>();
         public static readonly List<Quest> Quests = new List<Quest>();
         public static readonly List<Location> Locations = new List<Location>();
 
+        //ITEMS
         public const int ITEM_ID_RUSTY_SWORD = 1;
         public const int ITEM_ID_RAT_TAIL = 2;
         public const int ITEM_ID_PIECE_OF_FUR = 3;
@@ -24,13 +26,16 @@ namespace Engine
         public const int ITEM_ID_SPIDER_SILK = 9;
         public const int ITEM_ID_ADVENTURER_PASS = 10;
 
+        //MONSTERS
         public const int MONSTER_ID_RAT = 1;
         public const int MONSTER_ID_SNAKE = 2;
         public const int MONSTER_ID_GIANT_SPIDER = 3;
 
+        //QUESTS
         public const int QUEST_ID_CLEAR_ALCHEMIST_GARDEN = 1;
         public const int QUEST_ID_CLEAR_FARMERS_FIELD = 2;
 
+        //LOCATIONS
         public const int LOCATION_ID_HOME = 1;
         public const int LOCATION_ID_TOWN_SQUARE = 2;
         public const int LOCATION_ID_GUARD_POST = 3;
@@ -41,6 +46,8 @@ namespace Engine
         public const int LOCATION_ID_BRIDGE = 8;
         public const int LOCATION_ID_SPIDER_FIELD = 9;
 
+
+        //Populating the world
         static World()
         {
             PopulateItems();
@@ -49,6 +56,7 @@ namespace Engine
             PopulateLocations();
         }
 
+        //Adding items
         private static void PopulateItems()
         {
             Items.Add(new Weapon(ITEM_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5));
@@ -63,6 +71,8 @@ namespace Engine
             Items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes"));
         }
 
+
+        //Adding monsters
         private static void PopulateMonsters()
         {
             Monster rat = new Monster(MONSTER_ID_RAT, "Rat", 5, 3, 10, 3, 3);
@@ -82,6 +92,8 @@ namespace Engine
             Monsters.Add(giantSpider);
         }
 
+
+        //Adding quests
         private static void PopulateQuests()
         {
             Quest clearAlchemistGarden =
@@ -108,6 +120,7 @@ namespace Engine
             Quests.Add(clearFarmersField);
         }
 
+        //Adding locations
         private static void PopulateLocations()
         {
             // Create each location
@@ -172,6 +185,7 @@ namespace Engine
             Locations.Add(spiderField);
         }
 
+        //Finding item
         public static Item ItemByID(int id)
         {
             foreach (Item item in Items)
@@ -185,6 +199,7 @@ namespace Engine
             return null;
         }
 
+        //Finding monster
         public static Monster MonsterByID(int id)
         {
             foreach (Monster monster in Monsters)
@@ -198,6 +213,7 @@ namespace Engine
             return null;
         }
 
+        //Finding quest
         public static Quest QuestByID(int id)
         {
             foreach (Quest quest in Quests)
@@ -211,6 +227,7 @@ namespace Engine
             return null;
         }
 
+        //Finding location
         public static Location LocationByID(int id)
         {
             foreach (Location location in Locations)
