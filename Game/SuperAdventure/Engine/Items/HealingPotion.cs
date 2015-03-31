@@ -4,6 +4,7 @@
 
     public class HealingPotion : Item
     {
+        //Constructor
         public HealingPotion(int id, string name, string namePlural, PotionType size)
             : base(id, name, namePlural)
         {

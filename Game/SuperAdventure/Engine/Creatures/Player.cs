@@ -4,6 +4,7 @@
 
     public class Player : LivingCreature
     {
+        //Properties
         public int Gold { get; set; }
 
         public int ExperiencePoints { get; set; }
@@ -27,7 +28,7 @@
             this.Inventory = new List<InventoryItem>();
             this.Quests = new List<PlayerQuest>();
         }
-
+        //Methods
         public bool HasRequiredItemToEnterThisLocation(Location location)
         {
             if (location.ItemRequiredToEnter == null)

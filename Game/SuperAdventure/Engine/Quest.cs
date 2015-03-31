@@ -4,6 +4,7 @@
 
     public class Quest
     {
+        //Properties
         public int ID { get; set; }
 
         public string Name { get; set; }
