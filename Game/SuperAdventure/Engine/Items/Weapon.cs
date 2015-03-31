@@ -6,6 +6,7 @@
         public int MinimumDamage { get; set; }
 
         public int MaximumDamage { get; set; }
+
         //Constructors
         public Weapon(int id, string name, string namePlural, int minimumDamage, int maximumDamage)
             : base(id, name, namePlural)

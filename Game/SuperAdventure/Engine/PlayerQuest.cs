@@ -6,6 +6,7 @@
         public Quest Details { get; set; }
 
         public bool IsCompleted { get; set; }
+
         //Constructor
         public PlayerQuest(Quest details)
         {

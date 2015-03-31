@@ -8,6 +8,7 @@
         public string Name { get; set; }
 
         public string NamePlural { get; set; }
+
         //Constructor
         public Item(int id, string name, string namePlural)
         {

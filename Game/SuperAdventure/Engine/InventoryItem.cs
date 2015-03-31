@@ -6,6 +6,7 @@
         public Item Details { get; set; }
 
         public int Quantity { get; set; }
+
         //Constructor
         public InventoryItem(Item details, int quantity)
         {

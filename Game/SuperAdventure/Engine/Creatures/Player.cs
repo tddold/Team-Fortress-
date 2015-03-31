@@ -28,6 +28,7 @@
             this.Inventory = new List<InventoryItem>();
             this.Quests = new List<PlayerQuest>();
         }
+
         //Methods
         public bool HasRequiredItemToEnterThisLocation(Location location)
         {

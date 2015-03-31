@@ -8,6 +8,7 @@
         public int CurrentHitPoints { get; set; }
 
         public int MaximumHitPoints { get; set; }
+
         //Constructor
         public LivingCreature(int currentHitPoints, int maximumHitPoints)
         {

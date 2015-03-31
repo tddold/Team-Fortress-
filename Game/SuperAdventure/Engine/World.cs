@@ -47,7 +47,6 @@ namespace Engine
         public const int LOCATION_ID_BRIDGE = 8;
         public const int LOCATION_ID_SPIDER_FIELD = 9;
 
-
         //Populating the world
         static World()
         {
@@ -72,7 +71,6 @@ namespace Engine
             Items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes"));
         }
 
-
         //Adding monsters
         private static void PopulateMonsters()
         {
@@ -92,7 +90,6 @@ namespace Engine
             Monsters.Add(snake);
             Monsters.Add(giantSpider);
         }
-
 
         //Adding quests
         private static void PopulateQuests()
