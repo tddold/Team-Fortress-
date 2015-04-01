@@ -125,6 +125,7 @@ namespace SuperAdventure
                         }
                     }
                 }
+
                 else
                 {
                     // The player does not already have the quest
@@ -139,6 +140,7 @@ namespace SuperAdventure
                         {
                             rtbMessages.Text += qci.Quantity.ToString() + " " + qci.Details.Name + Environment.NewLine;
                         }
+
                         else
                         {
                             rtbMessages.Text += qci.Quantity.ToString() + " " + qci.Details.NamePlural + Environment.NewLine;
@@ -172,6 +174,7 @@ namespace SuperAdventure
                 btnUseWeapon.Visible = true;
                 btnUsePotion.Visible = true;
             }
+
             else
             {
                 _currentMonster = null;
@@ -267,6 +270,7 @@ namespace SuperAdventure
                 cboWeapons.Visible = false;
                 btnUseWeapon.Visible = false;
             }
+
             else
             {
                 cboWeapons.DataSource = weapons;
@@ -298,6 +302,7 @@ namespace SuperAdventure
                 cboPotions.Visible = false;
                 btnUsePotion.Visible = false;
             }
+
             else
             {
                 cboPotions.DataSource = healingPotions;

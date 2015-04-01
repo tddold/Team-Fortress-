@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace SuperAdventure
 {
-    static class Program
+    static class SuperAdventureMain
     {
         /// <summary>
         /// The main entry point for the application.
