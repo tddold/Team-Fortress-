@@ -7,7 +7,7 @@
         //Properties
         public int CurrentHitPoints { get; set; }
 
-        public int MaximumHitPoints { get; set; }
+        public int MaximumHitPoints { get; private set; }
 
         //Constructor
         public LivingCreature(int currentHitPoints, int maximumHitPoints)

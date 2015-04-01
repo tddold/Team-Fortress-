@@ -15,11 +15,11 @@
             get { return ((ExperiencePoints / 100) + 1); }
         }
 
-        public Location CurrentLocation { get; set; }
+        public Location CurrentLocation { get;  set; }
 
-        public List<InventoryItem> Inventory { get; set; }
+        public List<InventoryItem> Inventory { get; private set; }
 
-        public List<PlayerQuest> Quests { get; set; }
+        public List<PlayerQuest> Quests { get; private set; }
 
         //Constructor
         public Player(int currentHitPoints, int maximumHitPoints, int gold, int experiencePoints)

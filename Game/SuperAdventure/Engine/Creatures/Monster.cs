@@ -5,17 +5,17 @@
     public class Monster : LivingCreature
     {
         //Properties
-        public int ID { get; set; }
+        public int ID { get; private set; }
 
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
-        public int MaximumDamage { get; set; }
+        public int MaximumDamage { get; private set; }
 
-        public int RewardExperiencePoints { get; set; }
+        public int RewardExperiencePoints { get; private set; }
 
-        public int RewardGold { get; set; }
+        public int RewardGold { get; private set; }
 
-        public List<LootItem> LootTable { get; set; }
+        public List<LootItem> LootTable { get; private set; }
 
         //Constructor
         public Monster(int id, string name, int maximumDamage, int rewardExpiriancePoints, int rewardGold, int currentHitPoints, int maximumHitPoints)
