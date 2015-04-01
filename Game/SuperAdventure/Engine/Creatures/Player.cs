@@ -9,7 +9,10 @@
 
         public int ExperiencePoints { get; set; }
 
-        public int Level { get; set; }
+        public int Level 
+        {
+            get { return ((ExperiencePoints / 100) + 1); }
+        }
 
         public Location CurrentLocation { get; set; }
 
@@ -18,12 +21,11 @@
         public List<PlayerQuest> Quests { get; set; }
 
         //Constructor
-        public Player(int currentHitPoints, int maximumHitPoints, int gold, int experiencePoints, int level)
+        public Player(int currentHitPoints, int maximumHitPoints, int gold, int experiencePoints)
             : base(currentHitPoints, maximumHitPoints)
         {
             this.Gold = gold;
             this.ExperiencePoints = experiencePoints;
-            this.Level = level;
 
             this.Inventory = new List<InventoryItem>();
             this.Quests = new List<PlayerQuest>();
