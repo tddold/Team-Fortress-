@@ -11,7 +11,7 @@
             this.Size = size;
         }
 
-        public PotionType Size { get; set; }
+        public PotionType Size { get; private set; }
 
         //Calculating health after usage
         public void PotionUse(int currentHealth, int maxHealth, PotionType potion)

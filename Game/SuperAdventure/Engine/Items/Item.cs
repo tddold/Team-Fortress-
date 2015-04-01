@@ -3,11 +3,11 @@
     public class Item
     {
         //Properties
-        public int ID { get; set; }
+        public int ID { get; private set; }
 
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
-        public string NamePlural { get; set; }
+        public string NamePlural { get; private set; }
 
         //Constructor
         public Item(int id, string name, string namePlural)

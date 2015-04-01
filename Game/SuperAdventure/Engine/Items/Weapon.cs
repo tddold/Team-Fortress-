@@ -3,9 +3,9 @@
     public class Weapon : Item
     {
         //Properties
-        public int MinimumDamage { get; set; }
+        public int MinimumDamage { get; private set; }
 
-        public int MaximumDamage { get; set; }
+        public int MaximumDamage { get; private set; }
 
         //Constructors
         public Weapon(int id, string name, string namePlural, int minimumDamage, int maximumDamage)
