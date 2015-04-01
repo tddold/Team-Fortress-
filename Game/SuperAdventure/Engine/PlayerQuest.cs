@@ -3,7 +3,7 @@
     public class PlayerQuest
     {
         //Properties
-        public Quest Details { get; set; }
+        public Quest Details { get; private set; }
 
         public bool IsCompleted { get; set; }
 

@@ -3,7 +3,7 @@
     public class InventoryItem
     {
         //Properties
-        public Item Details { get; set; }
+        public Item Details { get; private set; }
 
         public int Quantity { get; set; }
 

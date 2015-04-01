@@ -3,11 +3,11 @@
     public class LootItem
     {
         //Properties
-        public Item Details { get; set; }
+        public Item Details { get; private set; }
 
-        public int DropPercentage { get; set; }
+        public int DropPercentage { get; private set; }
 
-        public bool IsDefaultItem { get; set; }
+        public bool IsDefaultItem { get; private set; }
 
         //Constructor
         public LootItem(Item details, int dropPrecentage, bool isDefaultItem)

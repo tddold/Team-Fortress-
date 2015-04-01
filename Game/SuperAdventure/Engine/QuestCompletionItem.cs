@@ -3,9 +3,9 @@
     public class QuestCompletionItem
     {
         //Properties
-        public Item Details { get; set; }
+        public Item Details { get; private set; }
 
-        public int Quantity { get; set; }
+        public int Quantity { get; private set; }
 
         //Constructor
         public QuestCompletionItem(Item details, int quantity)
