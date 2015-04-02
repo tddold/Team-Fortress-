@@ -1,9 +1,11 @@
 ﻿namespace Engine
 {
-    public class PlayerQuest
+    using Engine.Interfaces;
+
+    public class PlayerQuest 
     {
         //Properties
-        public Quest Details { get; private set; }
+        public Quest Details { get; set; }
 
         public bool IsCompleted { get; set; }
 

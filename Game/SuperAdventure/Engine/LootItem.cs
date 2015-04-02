@@ -1,9 +1,11 @@
 ﻿namespace Engine
 {
-    public class LootItem
+    using Engine.Interfaces;
+
+    public class LootItem : IDetails
     {
         //Properties
-        public Item Details { get; private set; }
+        public Item Details { get; set; }
 
         public int DropPercentage { get; private set; }
 

@@ -1,9 +1,11 @@
 ﻿namespace Engine
 {
-    public class InventoryItem
+    using Engine.Interfaces;
+
+    public class InventoryItem : IDetails
     {
         //Properties
-        public Item Details { get; private set; }
+        public Item Details { get; set; }
 
         public int Quantity { get; set; }
 

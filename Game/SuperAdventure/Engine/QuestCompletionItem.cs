@@ -1,9 +1,11 @@
 ﻿namespace Engine
 {
-    public class QuestCompletionItem
+    using Engine.Interfaces;
+
+    public class QuestCompletionItem : IDetails
     {
         //Properties
-        public Item Details { get; private set; }
+        public Item Details { get; set; }
 
         public int Quantity { get; private set; }
 
