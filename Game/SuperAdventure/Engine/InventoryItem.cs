@@ -2,7 +2,7 @@
 {
     using Engine.Interfaces;
 
-    public class InventoryItem : IDetails
+    public class InventoryItem : IDetails , IDetailsExtension
     {
         //Properties
         public Item Details { get; set; }

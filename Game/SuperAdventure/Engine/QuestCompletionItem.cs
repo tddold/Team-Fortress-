@@ -2,12 +2,12 @@
 {
     using Engine.Interfaces;
 
-    public class QuestCompletionItem : IDetails
+    public class QuestCompletionItem : IDetails , IDetailsExtension
     {
         //Properties
         public Item Details { get; set; }
 
-        public int Quantity { get; private set; }
+        public int Quantity { get; set; }
 
         //Constructor
         public QuestCompletionItem(Item details, int quantity)

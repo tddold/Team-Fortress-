@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IDetails.cs" />
+    <Compile Include="Interfaces\IDetailsExtension.cs" />
     <Compile Include="Interfaces\ILiving.cs" />
     <Compile Include="Interfaces\IPersonalization.cs" />
     <Compile Include="Interfaces\IPersonalizationExtension.cs" />
