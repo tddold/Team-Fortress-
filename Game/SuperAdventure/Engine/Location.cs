@@ -1,11 +1,13 @@
 ﻿namespace Engine
 {
-    public class Location
+    using Engine.Interfaces;
+
+    public class Location : IPersonalization
     {
         //Properties
-        public int ID { get; private set; }
+        public int ID { get; set; }
 
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         public string Description { get; private set; }
 

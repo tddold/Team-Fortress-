@@ -1,11 +1,12 @@
 ﻿namespace Engine
 {
-    public class Item
+    using Engine.Interfaces;
+    public class Item : IPersonalization
     {
         //Properties
-        public int ID { get; private set; }
+        public int ID { get; set; }
 
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         public string NamePlural { get; private set; }
 
