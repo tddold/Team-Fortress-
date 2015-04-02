@@ -3,7 +3,7 @@
     using Engine.Interfaces;
     using System.Collections.Generic;
 
-    public class Monster : LivingCreature , IPersonalization
+    public class Monster : LivingCreature , IPersonalization , IReward
     {
         //Properties
         public int ID { get; set; }
@@ -12,9 +12,9 @@
 
         public int MaximumDamage { get; private set; }
 
-        public int RewardExperiencePoints { get; private set; }
+        public int RewardExperiencePoints { get; set; }
 
-        public int RewardGold { get; private set; }
+        public int RewardGold { get; set; }
 
         public List<LootItem> LootTable { get; private set; }
 

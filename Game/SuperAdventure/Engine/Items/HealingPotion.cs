@@ -4,14 +4,15 @@
 
     public class HealingPotion : Item
     {
+        //Properties
+        public PotionType Size { get; private set; }
+        
         //Constructor
         public HealingPotion(int id, string name, string namePlural, PotionType size)
             : base(id, name, namePlural)
         {
             this.Size = size;
         }
-
-        public PotionType Size { get; private set; }
 
         //Calculating health after usage
         public void PotionUse(int currentHealth, int maxHealth, PotionType potion)
