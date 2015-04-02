@@ -1,11 +1,13 @@
 ﻿namespace Engine
 {
-    public class Weapon : Item
+    using Engine.Interfaces;
+
+    public class Weapon : Item , IMaximumDamage
     {
         //Properties
-        public int MinimumDamage { get; private set; }
+        public int MinimumDamage { get; set; }
 
-        public int MaximumDamage { get; private set; }
+        public int MaximumDamage { get; set; }
 
         //Constructors
         public Weapon(int id, string name, string namePlural, int minimumDamage, int maximumDamage)

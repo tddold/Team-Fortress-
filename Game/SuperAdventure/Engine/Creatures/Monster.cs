@@ -3,14 +3,14 @@
     using Engine.Interfaces;
     using System.Collections.Generic;
 
-    public class Monster : LivingCreature , IPersonalization , IReward
+    public class Monster : LivingCreature , IPersonalization , IReward , IMaximumDamage
     {
         //Properties
         public int ID { get; set; }
 
         public string Name { get; set; }
 
-        public int MaximumDamage { get; private set; }
+        public int MaximumDamage { get; set; }
 
         public int RewardExperiencePoints { get; set; }
 
