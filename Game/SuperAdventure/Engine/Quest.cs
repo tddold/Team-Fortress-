@@ -3,14 +3,14 @@
     using Engine.Interfaces;
     using System.Collections.Generic;
 
-    public class Quest : IPersonalization
+    public class Quest : IPersonalization ,IPersonalizationExtension
     {
         //Properties
         public int ID { get; set; }
 
         public string Name { get; set; }
 
-        public string Description { get; private set; }
+        public string Description { get; set; }
 
         public int RewardExperiencePoints { get; private set; }
 

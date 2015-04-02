@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\ILiving.cs" />
     <Compile Include="Interfaces\IPersonalization.cs" />
+    <Compile Include="Interfaces\IPersonalizationExtension.cs" />
     <Compile Include="Items\HealingPotion.cs" />
     <Compile Include="InventoryItem.cs" />
     <Compile Include="Items\Item.cs" />

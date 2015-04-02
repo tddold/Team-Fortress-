@@ -2,14 +2,14 @@
 {
     using Engine.Interfaces;
 
-    public class Location : IPersonalization
+    public class Location : IPersonalization , IPersonalizationExtension
     {
         //Properties
         public int ID { get; set; }
 
         public string Name { get; set; }
 
-        public string Description { get; private set; }
+        public string Description { get; set; }
 
         public Item ItemRequiredToEnter { get; private set; }
 
