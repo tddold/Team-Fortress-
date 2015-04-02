@@ -1,6 +1,7 @@
 ﻿namespace Engine
 {
     using Engine.Interfaces;
+
     public class Item : IPersonalization
     {
         //Properties

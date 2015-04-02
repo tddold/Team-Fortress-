@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\QuantityException.cs" />
     <Compile Include="Interfaces\IDetails.cs" />
     <Compile Include="Interfaces\IDetailsExtension.cs" />
     <Compile Include="Interfaces\ILiving.cs" />

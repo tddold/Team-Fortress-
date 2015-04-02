@@ -1,13 +1,31 @@
 ﻿namespace Engine
 {
     using Engine.Interfaces;
+    using Engine.Exceptions;
 
-    public class InventoryItem : IDetails , IDetailsExtension
+    public class InventoryItem : IDetails, IDetailsExtension
     {
-        //Properties
+        private int quantity;
+        
+         //Properties
         public Item Details { get; set; }
 
-        public int Quantity { get; set; }
+        public int Quantity
+        {
+            get
+            {
+                return this.quantity;
+            }
+            set
+            {
+
+                if (value < 0)
+                {
+                    throw new QuantityException("Invalid quantity", 0);
+                }
+                this.quantity = value;
+            }
+        }
 
         //Constructor
         public InventoryItem(Item details, int quantity)
