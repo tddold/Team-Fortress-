@@ -5,6 +5,7 @@
 
     public class InventoryItem : IDetails, IDetailsExtension
     {
+        //Fields
         private int quantity;
         
          //Properties
@@ -21,7 +22,7 @@
 
                 if (value < 0)
                 {
-                    throw new QuantityException("Invalid quantity", 0);
+                    throw new QuantityException("Invalid quantity", 0); // Adding the custom exception
                 }
                 this.quantity = value;
             }
