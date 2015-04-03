@@ -52,7 +52,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuests)).BeginInit();
             this.SuspendLayout();
-            
             // 
             // label1
             // 
@@ -62,7 +61,6 @@
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hit Points:";
-            
             // 
             // Label2
             // 
@@ -72,7 +70,6 @@
             this.Label2.Size = new System.Drawing.Size(63, 13);
             this.Label2.TabIndex = 1;
             this.Label2.Text = "Experience:";
-            
             // 
             // label3
             // 
@@ -82,7 +79,6 @@
             this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Level:";
-            
             // 
             // lblHitPoints
             // 
@@ -91,7 +87,6 @@
             this.lblHitPoints.Name = "lblHitPoints";
             this.lblHitPoints.Size = new System.Drawing.Size(0, 13);
             this.lblHitPoints.TabIndex = 3;
-            
             // 
             // lblGold
             // 
@@ -100,7 +95,6 @@
             this.lblGold.Name = "lblGold";
             this.lblGold.Size = new System.Drawing.Size(0, 13);
             this.lblGold.TabIndex = 4;
-            
             // 
             // lblExperience
             // 
@@ -109,7 +103,6 @@
             this.lblExperience.Name = "lblExperience";
             this.lblExperience.Size = new System.Drawing.Size(0, 13);
             this.lblExperience.TabIndex = 5;
-            
             // 
             // label4
             // 
@@ -119,7 +112,6 @@
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Gold:";
-            
             // 
             // lblLevel
             // 
@@ -128,7 +120,6 @@
             this.lblLevel.Name = "lblLevel";
             this.lblLevel.Size = new System.Drawing.Size(0, 13);
             this.lblLevel.TabIndex = 8;
-            
             // 
             // label5
             // 
@@ -138,7 +129,6 @@
             this.label5.Size = new System.Drawing.Size(70, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Select Action";
-            
             // 
             // cboWeapons
             // 
@@ -147,7 +137,6 @@
             this.cboWeapons.Name = "cboWeapons";
             this.cboWeapons.Size = new System.Drawing.Size(121, 21);
             this.cboWeapons.TabIndex = 10;
-            
             // 
             // cboPotions
             // 
@@ -160,7 +149,6 @@
             this.cboPotions.Name = "cboPotions";
             this.cboPotions.Size = new System.Drawing.Size(121, 21);
             this.cboPotions.TabIndex = 11;
-            
             // 
             // btnUseWeapon
             // 
@@ -171,7 +159,6 @@
             this.btnUseWeapon.Text = "Use";
             this.btnUseWeapon.UseVisualStyleBackColor = true;
             this.btnUseWeapon.Click += new System.EventHandler(this.btnUseWeapon_Click);
-            
             // 
             // btnUsePotion
             // 
@@ -182,7 +169,6 @@
             this.btnUsePotion.Text = "Use";
             this.btnUsePotion.UseVisualStyleBackColor = true;
             this.btnUsePotion.Click += new System.EventHandler(this.btnUsePotion_Click);
-            
             // 
             // btnNorth
             // 
@@ -193,7 +179,6 @@
             this.btnNorth.Text = "North";
             this.btnNorth.UseVisualStyleBackColor = true;
             this.btnNorth.Click += new System.EventHandler(this.btnNorth_Click);
-            
             // 
             // btnEast
             // 
@@ -204,7 +189,6 @@
             this.btnEast.Text = "East";
             this.btnEast.UseVisualStyleBackColor = true;
             this.btnEast.Click += new System.EventHandler(this.btnEast_Click);
-            
             // 
             // btnSouth
             // 
@@ -215,7 +199,6 @@
             this.btnSouth.Text = "South";
             this.btnSouth.UseVisualStyleBackColor = true;
             this.btnSouth.Click += new System.EventHandler(this.btnSouth_Click);
-            
             // 
             // btnWest
             // 
@@ -226,7 +209,6 @@
             this.btnWest.Text = "West";
             this.btnWest.UseVisualStyleBackColor = true;
             this.btnWest.Click += new System.EventHandler(this.btnWest_Click);
-           
             // 
             // rtbLocation
             // 
@@ -236,7 +218,6 @@
             this.rtbLocation.Size = new System.Drawing.Size(360, 105);
             this.rtbLocation.TabIndex = 18;
             this.rtbLocation.Text = "";
-            
             // 
             // rtbMessages
             // 
@@ -246,7 +227,6 @@
             this.rtbMessages.Size = new System.Drawing.Size(360, 286);
             this.rtbMessages.TabIndex = 19;
             this.rtbMessages.Text = "";
-            
             // 
             // dgvInventory
             // 
@@ -263,7 +243,6 @@
             this.dgvInventory.RowHeadersVisible = false;
             this.dgvInventory.Size = new System.Drawing.Size(312, 309);
             this.dgvInventory.TabIndex = 20;
-            
             // 
             // dgvQuests
             // 
@@ -280,7 +259,6 @@
             this.dgvQuests.RowHeadersVisible = false;
             this.dgvQuests.Size = new System.Drawing.Size(312, 189);
             this.dgvQuests.TabIndex = 21;
-            
             // 
             // SuperAdventure
             // 
@@ -311,10 +289,12 @@
             this.Location = new System.Drawing.Point(110, 31);
             this.Name = "SuperAdventure";
             this.Text = "Game";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SuperAdventure_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuests)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
