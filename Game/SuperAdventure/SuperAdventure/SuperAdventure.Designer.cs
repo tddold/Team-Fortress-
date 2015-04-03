@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuperAdventure));
             this.label1 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -264,14 +265,12 @@
             // 
             // Ninja
             // 
-            this.Ninja.Image = global::SuperAdventure.Properties.Resources.Ninja;
-            this.Ninja.Location = new System.Drawing.Point(135, 12);
+            this.Ninja.Image = ((System.Drawing.Image)(resources.GetObject("Ninja.Image")));
+            this.Ninja.Location = new System.Drawing.Point(143, -7);
             this.Ninja.Name = "Ninja";
-            this.Ninja.Size = new System.Drawing.Size(193, 100);
-            this.Ninja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Ninja.Size = new System.Drawing.Size(198, 120);
             this.Ninja.TabIndex = 22;
             this.Ninja.TabStop = false;
-            this.Ninja.Click += new System.EventHandler(this.SuperAdventure_Load);
             // 
             // SuperAdventure
             // 
