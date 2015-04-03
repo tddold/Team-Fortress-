@@ -510,5 +510,14 @@ namespace SuperAdventure
         {
             File.WriteAllText(PLAYER_DATA_FILE_NAME, _player.ToXmlString());
         }
+
+        private void SuperAdventure_Load(object sender, EventArgs e)
+        {
+            //Image image = Image.FromFile("Ninja.png");
+            // Set the ImageLocation property to a file on the disk.
+            // ... Set the size mode so that the image is correctly sized.
+            //Ninja.ImageLocation = "Ninja.png";
+            //Ninja.SizeMode = PictureBoxSizeMode.AutoSize;
+        }
     }
 }
