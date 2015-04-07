@@ -87,9 +87,8 @@
   <ItemGroup>
     <None Include="Ninja.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="bin\Debug\Ninja.png" />
+    <Folder Include="bin\Debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
