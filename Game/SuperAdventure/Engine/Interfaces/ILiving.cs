@@ -1,7 +1,9 @@
-﻿
-namespace Engine.Interfaces
+﻿namespace Engine.Interfaces
 {
-    interface ILiving
+    public interface ILiving
     {
+        int CurrentHitPoints { get; set; }
+
+        int MaximumHitPoints { get; set; }
     }
 }

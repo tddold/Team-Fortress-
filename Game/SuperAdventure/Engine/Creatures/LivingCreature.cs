@@ -2,12 +2,12 @@
 {
     using Engine.Interfaces;
 
-    public class LivingCreature //: ILiving
+    public abstract class LivingCreature : ILiving
     {
         //Properties
         public int CurrentHitPoints { get; set; }
 
-        public int MaximumHitPoints { get; private set; }
+        public int MaximumHitPoints { get; set; }
 
         //Constructor
         public LivingCreature(int currentHitPoints, int maximumHitPoints)

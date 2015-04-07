@@ -2,7 +2,7 @@
 {
     using Engine.Interfaces;
 
-    public class Weapon : Item , IMaximumDamage
+    public class Weapon : Item , IMaximumDamage , IMinimumDamage
     {
         //Properties
         public int MinimumDamage { get; set; }

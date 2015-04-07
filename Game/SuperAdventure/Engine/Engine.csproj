@@ -44,6 +44,7 @@
     <Compile Include="Interfaces\IDetailsExtension.cs" />
     <Compile Include="Interfaces\ILiving.cs" />
     <Compile Include="Interfaces\IMaximumDamage.cs" />
+    <Compile Include="Interfaces\IMinimumDamage.cs" />
     <Compile Include="Interfaces\IPersonalization.cs" />
     <Compile Include="Interfaces\IPersonalizationExtension.cs" />
     <Compile Include="Interfaces\IReward.cs" />
